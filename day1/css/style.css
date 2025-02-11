@@ -32,6 +32,9 @@ a{
 /* primo flex */
 .flex{
   display: flex;
+}
+
+.altezza{
   height: calc(100vh - 90px);
 }
 
@@ -40,6 +43,7 @@ a{
   background-color: #000000;
   color: #5c5c5c;
   width: 55px;
+  height: 100%;
 }
 
 /* logo */
@@ -53,6 +57,10 @@ a{
 .tendina ul li {
   padding: 0 12px;
   margin-bottom: 10px;
+}
+
+.menù{
+  margin-bottom: 45vh;
 }
 
 /* metodo per modificare svg al colore desiderato con i filtri */
@@ -74,8 +82,14 @@ a{
 }
 
 /* login */
+.login .downloadapp img{
+  transform: scaleX(-1);
+}
 
-
+.tendina ul li .cerchioprofilo img{
+  background-color: #6c6c6c;
+  border-radius: 20px;
+}
 
 /* main */
 .corpo{
