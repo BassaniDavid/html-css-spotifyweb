@@ -17,6 +17,7 @@ ul li{
 a{
   text-decoration: none;
   color: inherit;
+  display: block;
 }
 
 h2{
@@ -26,6 +27,11 @@ h2{
   font-size: 1rem;
 }
 
+.menù a, .login a{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 /* utilities */
 .height1{
   height: 60px;
