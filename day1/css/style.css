@@ -10,6 +10,15 @@ body{
   background-color: #151922;
 }
 
+ul li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* utilities */
 .height1{
   height: 90px;
@@ -33,20 +42,22 @@ body{
   width: 55px;
 }
 
+/* logo */
 .tendina .logo{
   width: 30px;
   height: 30px;
   margin: 12px 12px 24px;
 }
 
-ul li{
-  list-style: none;
-  text-decoration: none;
-}
-
+/* menu */
 .tendina ul li {
   padding: 0 12px;
   margin-bottom: 10px;
+}
+
+/* metodo per modificare svg al colore desiderato con i filtri */
+.tendina ul li img{
+  filter: invert(33%) sepia(16%) saturate(5%) hue-rotate(23deg) brightness(96%) contrast(83%);
 }
 
 .home{
@@ -56,6 +67,16 @@ ul li{
 .greenhover:hover{
   border-left: 2px solid #baf066;
 }
+
+/* playlist */
+.playlist{
+  display: none;
+}
+
+/* login */
+
+
+
 /* main */
 .corpo{
   width: 100%;
