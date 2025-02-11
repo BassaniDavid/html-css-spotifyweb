@@ -6,16 +6,33 @@
   font-family: "Montserrat", serif;
 }
 
+body{
+  background-color: #151922;
+}
+/* utilities */
+.height1{
+  height: 90px;
+}
 .totale{
   height: 100vh;
 }
+
 .flex{
   display: flex;
   height: calc(100vh - 90px);
 }
 
-body{
-  background-color: #151922;
+.tendina{
+  background-color: #000000;
+  color: #5c5c5c;
+}
+
+.corpo{
+  width: 100%;
+}
+header{
+  background-color: #10151b;
+  width: 100%;
 }
 
 
@@ -23,7 +40,6 @@ body{
 
 footer{
   background-color: #282828;
-  min-height: 90px;
 }
 /* modalità tablet */
 
