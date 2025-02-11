@@ -9,24 +9,54 @@
 body{
   background-color: #151922;
 }
+
 /* utilities */
 .height1{
   height: 90px;
 }
+
+/* interezza della pagina */
 .totale{
   height: 100vh;
 }
 
+/* primo flex */
 .flex{
   display: flex;
   height: calc(100vh - 90px);
 }
 
+/* tendina laterale sinistra */
 .tendina{
   background-color: #000000;
   color: #5c5c5c;
+  width: 55px;
 }
 
+.tendina .logo{
+  width: 30px;
+  height: 30px;
+  margin: 12px 12px 24px;
+}
+
+ul li{
+  list-style: none;
+  text-decoration: none;
+}
+
+.tendina ul li {
+  padding: 0 12px;
+  margin-bottom: 10px;
+}
+
+.home{
+  border-left: 2px solid #baf066;
+}
+
+.greenhover:hover{
+  border-left: 2px solid #baf066;
+}
+/* main */
 .corpo{
   width: 100%;
 }
@@ -35,16 +65,21 @@ header{
   width: 100%;
 }
 
-
-
-
+/* footer */
 footer{
   background-color: #282828;
 }
+
+
 /* modalità tablet */
 
 /* modalità desktop */
 @media screen and (min-width: 768px) {
-
+  .height1{
+    height: 170px;
+  }
+  .flex{
+    height: calc(100vh - 170px);
+  }
     
 }

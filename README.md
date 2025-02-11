@@ -1,0 +1,1 @@
+progetto: replicare la prima parte del layout di spotify
