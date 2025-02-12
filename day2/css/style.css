@@ -163,8 +163,21 @@ h2 {
 }
 
 header {
-  background-color: #10151b;
+  background-color: #00000080;
   width: 100%;
+  justify-content: end;
+  align-items: center
+}
+
+button{
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-right: 5px;
+  background-color: #00000000;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 40px;
+
 }
 
 /* footer */
