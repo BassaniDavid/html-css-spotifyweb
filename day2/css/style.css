@@ -191,9 +191,8 @@ button:hover{
   background-color: #fefefe39;
 }
 
-/* main */
+/* nav */
 nav{
-  opacity: 0.5;
   text-transform: uppercase;
   margin-top: 90px;
 
@@ -211,8 +210,41 @@ nav ul{
 
 nav ul li{
   display: inline-block;
+  position: relative;
 }
 
+nav ul li a{
+  opacity: 0.5;
+}
+
+nav ul li a:hover{
+  opacity: 1;
+}
+
+.greenline{
+  width: 25px;
+  height: 100%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #baf066;
+}
+
+.greenlinehov{
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 30px;
+  height: 18px;
+  border-bottom: 2px solid #baf066;
+  opacity: 0;
+}
+
+.greenlinehov:hover{
+opacity: 1;
+}
+
+
+/* main */
 .padding{
   padding: 20px;
 }
