@@ -216,24 +216,33 @@ h3{
   margin-bottom: 20px;
 }
 .recente.flex{
-  flex-wrap: wrap;
+  display: flex;
   text-align: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 20px;
+}
+
+.recente.flex div{
+  width: calc(100% / 2 - 20px)
 }
 
 .recente.flex img{
  width: 100%;
  padding-bottom: 10px;
 }
-.recente.flex h4{
+h4{
  padding-bottom: 10px;
 }
 
-.recente.flex h5{
+h5{
   opacity: .5;
+  padding-bottom: 20px;
 }
 
-.recente.flex
+h4, h5{
+  font-size: .7rem;
+}
 
 
 /* footer */
@@ -292,12 +301,23 @@ footer {
   div.cerchioprofilo {
     display: inline-block;
   }
+
 }
 /*********** modalità md *************/
 @media screen and (min-width: 768px) {
-  
+  .recente.flex{
+    margin-left: 20px;
+    justify-content: flex-start;
+  }
+  .recente.flex div{
+    width: calc(100% / 4 - 20px);
+  }
 }
 /*********** modalità lg (desktop) ***********/
 @media screen and (min-width: 992px) {
+ 
+  .recente.flex div{
+    width: calc(100% / 6 - 20px);
+  }
 
 }
