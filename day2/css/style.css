@@ -158,7 +158,7 @@ h2 {
   margin: 0 5% 10px;
 }
 
-/* main */
+/* corpo */
 .corpo {
   flex-grow: 1;
 }
@@ -167,7 +167,8 @@ header {
   background-color: #00000080;
   width: 100%;
   justify-content: end;
-  align-items: center
+  align-items: center;
+  top: 0;
 }
 
 button{
@@ -184,12 +185,14 @@ button:hover{
   background-color: #fefefe39;
 }
 
+/* main */
 main{
   color: #ffffff;
-  flex-wrap: wrap;
+  overflow: auto;
 }
 
 nav{
+
   opacity: 0.5;
   text-transform: uppercase;
 
@@ -202,13 +205,35 @@ nav ul{
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  padding: 20px;
+  padding: 30px 0;
 }
 
 nav ul li{
   display: inline-block;
 }
 
+h3{
+  margin-bottom: 20px;
+}
+.recente.flex{
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.recente.flex img{
+ width: 100%;
+ padding-bottom: 10px;
+}
+.recente.flex h4{
+ padding-bottom: 10px;
+}
+
+.recente.flex h5{
+  opacity: .5;
+}
+
+.recente.flex
 
 
 /* footer */
