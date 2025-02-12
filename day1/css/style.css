@@ -1,4 +1,4 @@
-
+/* common */
 * {
   margin: 0;
   padding: 0;
@@ -6,105 +6,110 @@
   font-family: "Montserrat", serif;
 }
 
-body{
+body {
   background-color: #151922;
 }
 
-ul li{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-h2{
+h2 {
   color: #ffffff;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 1rem;
 }
 
-.menù a, .login a{
+.menù a,
+.login a {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 /* utilities */
-.height1{
-  height: 60px;
+.height1 {
+  height: 90px;
 }
 
 /* interezza della pagina */
-.totale{
+.totale {
   height: 100vh;
 }
 
 /* primo flex */
-.flex{
+.flex {
   display: flex;
 }
 
-.altezza{
-  height: calc(100vh - 60px);
+.altezza {
+  height: calc(100vh - 90px);
 }
 
 /* tendina laterale sinistra */
-.tendina{
+.tendina {
   background-color: #000000;
   color: #5c5c5c;
-  width: 55px;
+  width: 50px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  overflow: hidden;
 }
 
 /* logo */
-.tendina .logo{
+.tendina .logo {
   width: 30px;
   height: 30px;
   margin: 12px 12px 24px;
 }
 
-.logobig{
+.logobig {
   display: none;
 }
+
 /* menu */
 .tendina ul li {
   padding: 0 12px;
   margin-bottom: 10px;
 }
 
-.desktopvisibility{
+.desktopvisibility {
   display: none;
 }
-/* metodo per modificare svg al colore desiderato con i filtri */
-.tendina ul li img{
+
+/* metodo per modificare svg
+ al colore desiderato con i filtri */
+.tendina ul li img {
   filter: invert(33%) sepia(16%) saturate(5%) hue-rotate(23deg) brightness(96%) contrast(83%);
 }
 
-.home{
+.home {
   border-left: 2px solid #baf066;
 }
 
-.greenhover:hover{
+.greenhover:hover {
   border-left: 2px solid #baf066;
 }
 
 /* playlist */
-.playlist{
+.playlist {
   display: none;
   padding-left: 15px;
 }
 
-.tendina .playlist ul li{
+.tendina .playlist ul li {
   padding: 0;
 }
 
-.quadrato{
+.quadrato {
   background-color: #858585;
   width: 30px;
   height: 30px;
@@ -112,35 +117,40 @@ h2{
   align-items: center;
 }
 
-.playlist .flex, .playlist ul li{
-margin-bottom: 10px;
+.playlist .flex,
+.playlist ul li {
+  margin-bottom: 10px;
 }
 
-.playlist .flex .più{
+.playlist .flex .più {
   color: #000000;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.playlist .flex span{
+.playlist .flex span {
   line-height: 30px;
   padding: 0 0 0 10px;
 }
 
 /* login */
-.login .downloadapp img{
+.login {
+  margin-top: auto;
+}
+
+.login .downloadapp img {
   transform: scaleX(-1);
 }
 
-.tendina ul li .cerchioprofilo img{
+.tendina ul li .cerchioprofilo img {
   background-color: #6c6c6c;
   border-radius: 20px;
   height: 30px;
   width: 30px;
 }
 
-.login hr{
+.login hr {
   width: 90%;
   height: 1px;
   border: 1px solid #9a9a9a;
@@ -148,67 +158,73 @@ margin-bottom: 10px;
 }
 
 /* main */
-.corpo{
- flex-grow: 1;
+.corpo {
+  flex-grow: 1;
 }
-header{
+
+header {
   background-color: #10151b;
   width: 100%;
 }
 
 /* footer */
-footer{
+footer {
   background-color: #282828;
 }
 
 
-/* modalità tablet */
+/*********** modalità tablet *************/
+@media screen and (min-width: 768px) {}
 
-/* modalità desktop */
-@media screen and (min-width: 768px) {
-  .height1{
-    height: 90px;
-  }
-  .altezza{
-    height: calc(100vh - 90px);
-  }
+/*********** modalità desktop ***********/
+@media screen and (min-width: 992px) {
+
   /* tendina */
-  .tendina{
-    width: 250px;
+  .tendina {
+    width: 230px;
   }
+
   /* logo */
-  .tendina .logo{
-    width: 180px;
+  .tendina .logo {
+    width: 130px;
     height: auto;
   }
-  .logobig{
+
+  .logobig {
     display: block
   }
-  .logosmall{
+
+  .logosmall {
     display: none;
   }
+
   /* menù */
-  .menù{
+  .menù {
     margin-bottom: 40px;
   }
-  .desktopvisibility{
+
+  .desktopvisibility {
     display: inline-block;
     text-align: center;
   }
-  .tendina .menù .desktopvisibility{
+
+  .tendina .menù .desktopvisibility {
     color: #999999;
   }
-  .menù li a img, .login ul a img{
+
+  .menù li a img,
+  .login ul a img {
     width: 30px;
     height: 30px;
   }
+
   /* playlist menu laterale */
-  .playlist{
+  .playlist {
     display: block
   }
-  
+
   /* login */
-  div.cerchioprofilo{
+  div.cerchioprofilo {
     display: inline-block;
   }
 }
