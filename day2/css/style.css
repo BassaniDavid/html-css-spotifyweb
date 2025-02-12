@@ -63,6 +63,7 @@ h2 {
   flex-direction: column;
   overflow: hidden;
   flex-shrink: 0;
+  z-index: 1;
 }
 
 /* logo */
