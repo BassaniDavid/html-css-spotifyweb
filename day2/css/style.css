@@ -81,7 +81,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.desktopvisibility {
+.s-visibility {
   display: none;
 }
 
@@ -177,7 +177,10 @@ button{
   color: #fff;
   border: 2px solid #fff;
   border-radius: 40px;
+}
 
+button:hover{
+  background-color: #fefefe39;
 }
 
 /* footer */
@@ -186,12 +189,8 @@ footer {
 }
 
 
-/*********** modalità tablet *************/
-@media screen and (min-width: 768px) {}
-
-/*********** modalità desktop ***********/
-@media screen and (min-width: 992px) {
-
+/*********** modalità s *************/
+@media screen and (min-width: 576px) {
   /* tendina */
   .tendina {
     width: 230px;
@@ -216,12 +215,12 @@ footer {
     margin-bottom: 40px;
   }
 
-  .desktopvisibility {
+  .s-visibility {
     display: inline-block;
     text-align: center;
   }
 
-  .tendina .menù .desktopvisibility {
+  .tendina .menù .s-visibility {
     color: #999999;
   }
 
@@ -240,4 +239,12 @@ footer {
   div.cerchioprofilo {
     display: inline-block;
   }
+}
+/*********** modalità md *************/
+@media screen and (min-width: 768px) {
+  
+}
+/*********** modalità lg (desktop) ***********/
+@media screen and (min-width: 992px) {
+
 }
