@@ -160,21 +160,26 @@ h2 {
 
 /* corpo */
 .corpo {
+  color: #ffffff;
+  overflow: auto;
   flex-grow: 1;
 }
 
+/* header */
 header {
   background-color: #00000080;
   width: 100%;
   justify-content: end;
   align-items: center;
+  position: fixed;
   top: 0;
+  right: 0;
 }
 
 button{
   text-transform: uppercase;
   padding: 10px 20px;
-  margin-right: 5px;
+  margin-right: 20px;
   background-color: #00000000;
   color: #fff;
   border: 2px solid #fff;
@@ -186,15 +191,10 @@ button:hover{
 }
 
 /* main */
-main{
-  color: #ffffff;
-  overflow: auto;
-}
-
 nav{
-
   opacity: 0.5;
   text-transform: uppercase;
+  margin-top: 90px;
 
 }
 
