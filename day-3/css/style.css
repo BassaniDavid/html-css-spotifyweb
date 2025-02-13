@@ -89,11 +89,15 @@ h2 {
 }
 
 /* tendina testo bianco in hover + nome utente sempre bianco */
-.tendina .menù .s-visibility:hover, .playlist div:hover, .playlist ul li:hover, .login .downloadapp span:hover, .login div:last-child {
+.tendina .menù .s-visibility:hover,
+.playlist div:hover,
+.playlist ul li:hover,
+.login .downloadapp span:hover,
+.login div:last-child {
   color: #ffffff;
 }
 
-.playlist div:hover .quadrato{
+.playlist div:hover .quadrato {
   background-color: #fff;
 }
 
@@ -204,6 +208,7 @@ button {
 
 button:hover {
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 /* nav */
@@ -342,72 +347,129 @@ footer {
   font-size: .6rem;
 }
 
-footer p{
+footer p {
   font-size: .7rem;
   font-weight: 700;
 }
 
-footer>div{
+footer>div {
   width: calc(100% / 3 - 2vw);
 }
 
-.song, .sound, .control{
- align-items: center;
- height: 100%;
- justify-content: space-around
+.song,
+.sound,
+.control {
+  align-items: center;
+  height: 100%;
+  justify-content: space-around
 }
 
-.song, .sound{
+.song,
+.sound {
   align-items: center;
   height: 100%;
   justify-content: space-between;
   max-width: 300px;
- }
+}
 
-.song{
+.song {
   padding-right: 4%;
 }
 
-.song span, .iconesovrapposte{
+.song span,
+.iconesovrapposte {
   color: #878787;
   font-weight: 600;
+  font-size: .8rem;
 }
 
-footer .song img{
+.song span:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer .song img {
   max-width: 30%;
   max-height: 100%;
 }
 
-.iconesovrapposte{
+.iconesovrapposte {
   flex-direction: column;
 }
 
-.control{
+.iconesovrapposte a i:hover {
+  color: #fff;
+}
+
+.control {
   flex-direction: column;
 }
 
-.up, .down{
- width: 100%;
- align-items: baseline;
- justify-content: space-around;
+.up,
+.down {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.up{
+.up {
+  height: 30%;
   font-size: 1rem;
   justify-content: space-between
 }
 
-.soundbar, .soundbarlight{
+.playbutton {
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+}
+
+.up .fa-circle-play {
+  font-size: 1.4rem;
+}
+
+.up .fa-circle-play:hover {
+  font-size: 160%;
+}
+
+.soundbar, .soundbarlight {
   width: 60%;
   height: 4px;
   background-color: #5a5a5a;
   border-radius: 4px;
 }
-.soundbarlight{
+
+.soundbarlight {
+  display: flex;
+  justify-content: end;
+  align-items: center;
   width: 20%;
   background-color: #aaa7a7;
 }
 
+.point-w{
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: none;
+}
+.soundbar:hover{
+  cursor: pointer;
+}
+
+.up *:hover{
+  cursor: pointer;
+}
+
+.soundbar:hover .soundbarlight{
+  background-color: #baf066;
+}
+
+.soundbar:hover .point-w{
+  display: block;
+}
 /*********** modalità s *************/
 @media screen and (min-width: 576px) {
 
@@ -472,26 +534,31 @@ footer .song img{
     width: calc(100% / 4 - 20px);
   }
 
-  footer{
+  footer {
     font-size: .8rem;
     gap: 60px;
   }
 
-  footer p{
+  footer p {
     font-size: 1rem;
   }
 
-  .up{
+  .up {
     font-size: 1.4rem;
     justify-content: space-around;
     padding: 0 15%;
   }
 
-  footer .iconesovrapposte{
-    flex-direction: row;
-    gap: 10px;
+  .up .fa-circle-play {
+    font-size: 1.8rem;
   }
-  
+
+  footer .iconesovrapposte {
+    flex-direction: row;
+    gap: 20px;
+    font-size: 1.2rem;
+  }
+
 }
 
 /*********** modalità lg (desktop) ***********/
