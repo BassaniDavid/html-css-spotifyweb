@@ -93,6 +93,10 @@ h2 {
   color: #ffffff;
 }
 
+.playlist div:hover .quadrato{
+  background-color: #fff;
+}
+
 /* metodo per modificare svg
  al colore desiderato con i filtri */
 .tendina ul li img {
@@ -333,6 +337,7 @@ footer {
   gap: 20px;
   align-items: baseline;
   align-items: center;
+  color: white;
 }
 
 footer>div{
