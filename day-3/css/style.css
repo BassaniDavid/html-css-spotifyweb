@@ -330,9 +330,29 @@ h5 {
 /* footer */
 footer {
   background-color: #282828;
+  gap: 20px;
+  align-items: baseline;
+  align-items: center;
 }
 
+footer>div{
+  flex-grow: 1;
+  flex-shrink: 0;
+}
 
+footer .song{
+ align-items: center;
+}
+footer .song img{
+  max-width: 60px;
+}
+footer .control{
+
+}
+
+footer .soundbar{
+
+}
 /*********** modalità s *************/
 @media screen and (min-width: 576px) {
 
