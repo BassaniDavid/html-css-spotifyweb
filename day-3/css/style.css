@@ -88,6 +88,11 @@ h2 {
   display: none;
 }
 
+/* tendina testo bianco in hover + nome utente sempre bianco */
+.tendina .menù .s-visibility:hover, .playlist div:hover, .playlist ul li:hover, .login .downloadapp span:hover, .login div:last-child {
+  color: #ffffff;
+}
+
 /* metodo per modificare svg
  al colore desiderato con i filtri */
 .tendina ul li img {
@@ -178,10 +183,15 @@ header {
   right: 0;
 }
 
+header div {
+  margin-right: 20px;
+  width: 210px;
+  justify-content: center;
+}
+
 button {
   text-transform: uppercase;
   padding: 10px 20px;
-  margin-right: 20px;
   background-color: #00000000;
   color: #fff;
   border: 2px solid #fff;
@@ -189,7 +199,7 @@ button {
 }
 
 button:hover {
-  background-color: #fefefe39;
+  font-size: 0.9rem;
 }
 
 /* nav */
@@ -268,17 +278,20 @@ h3 {
 .recente.flex .musichov {
   width: 100%;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .recente.flex img {
   width: 100%;
-  padding-bottom: 10px;
 }
 
 .recente.flex div:hover img {
   opacity: .5;
 }
 
+.recente.flex i {
+  font-size: 2.5rem;
+}
 
 .recente.flex .playhov {
   position: absolute;
