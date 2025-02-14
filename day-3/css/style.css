@@ -431,7 +431,7 @@ footer .song img {
 
 .soundbar,
 .soundbarlight {
-  width: 60%;
+  width: 70%;
   height: 4px;
   background-color: #5a5a5a;
   border-radius: 4px;
@@ -474,7 +474,6 @@ footer .song img {
   footer .song img {
     max-width: 30%;
   }
-
 }
 
 /*********** modalità s *************/
@@ -532,7 +531,6 @@ footer .song img {
   nav ul {
     font-size: 1.5vw;
   }
-
 }
 
 /*********** modalità md *************/
@@ -569,7 +567,6 @@ footer .song img {
     gap: 20px;
     font-size: 1.2rem;
   }
-
 }
 
 /*********** modalità lg (desktop) ***********/
@@ -582,5 +579,13 @@ footer .song img {
   nav ul {
     font-size: 1vw;
   }
+
+  .up {
+    padding: 0 25%;
+  }
+
+  .soundbar{
+  width: 80%;
+}
 
 }
